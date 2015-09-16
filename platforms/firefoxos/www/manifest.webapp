@@ -1,0 +1,14 @@
+{
+    "launch_path": "/index.html",
+    "installs_allowed_from": [
+        "*"
+    ],
+    "version": "0.0.1",
+    "name": "COnvention INoubliable 2015",
+    "description": "Une application pour le COIN 2015, sous licence LGPL-3.0, codée par Konwhald :3",
+    "developer": {
+        "name": "Konwhald",
+        "url": "http://www.taverne-oubliee.com/"
+    },
+    "icons": {}
+}

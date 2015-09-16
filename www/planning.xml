@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planning> <!-- File containing all events-->
+<!-- Important note : no space or strange character for modalID, or ratchet will be unable to fire it -->
+    
+    
+
+<!-- thursday -->
+<day name="Jeudi" id="Jeudi">
+    <divider>17h00</divider>     
+    <event>
+        <title>Left4Dead grandeur nature</title>
+        <modalID>LeftFourDead</modalID>
+        <WhenWhere>À 17h, à l'entrée de la MDE</WhenWhere>
+        <details>Lancement du Left4Dead grandeur nature ! Si vous êtes inscrits, rendez-vous à l'entrée de la Maison des Étudiant avec votre plus beau costume de zombie ou de survivant, et écoutez attentivement les instructions.<br/> Note : Si vous n'êtes pas inscrits mais tenez à particier, adressez-vous à Baron, le monsieur en blouse blanche. Il reste PEUT-ÊTRE quelques places, mais rien de garanti</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+
+    <divider>18h00</divider>
+    <event>
+        <title>Soirée Halloween</title>
+        <modalID>SoireeHalloween</modalID>
+        <WhenWhere>À 18h à la MDE Lille 1</WhenWhere>
+        <details>La COnvention Inoubliable démarre avec la soirée Halloween, à la Maison des Étudiants de Lille 1 ! Pendant toute la soirée il y aura des jeux de société et des (fausses) toiles d'araignée un peu partout... Le chemin est indiqué par des canards blancs tagués sur le sol depuis le métro Cité Scientifique, sur la ligne 1</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Commande pizzas</title>
+        <modalID>pizza</modalID>
+        <WhenWhere>À 18h, au bénévole avec l'ordinateur portable</WhenWhere>
+        <details>Dès l'ouverture de la soirée, il y a la possibilité de commander des pizzas ! Cherchez du regard un-e bénévole avec un ordinateur portable, qui va prendre les commandes. Pour 5€ vous pouvez avoir une grande demi-pizza, et des boissons et chips seront servies quand les pizzas arriveront, plus tard en soirée. Le paiement se fait en liquide. Un distributeur est disponible soit près de l'arrêt de métro Triolo, à une station d'ici, soit au Restaurant Universitaire Pariselle</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+ 
+    <divider>21h00</divider>     
+    <event>
+        <title>Citrouilles !</title>
+        <modalID>Citrouilles</modalID>
+        <WhenWhere>À 21h, à l'entrée de la MDE</WhenWhere>
+        <details>Venez tailler des citrouilles grimaçantes, effrayantes ou tout simplement amusantes :) A l'arrière de la MDE, des soupes de potiron dans des gobelets sont proposées, pour nos artistes en herbe, n'hésitez pas à venir en réclamer</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>2ème commande de pizzas</title>
+        <modalID>Pizzabis</modalID>
+        <WhenWhere>À 21h30, au bénévole avec l'ordinateur portable</WhenWhere>
+        <details>Il y a une deuxieme commande de pizzas, pour les affamé-e-s ou les gens participants au Left4Dead en début de soirée qui n'ont pas pu commander. Pour rappel, une grande demi-pizza coûte 5€</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>02h00</divider>
+    <event>
+        <title>Fin de la soirée Halloween</title>
+        <modalID>FinHalloween</modalID>
+        <WhenWhere>À 10h pile poil, à l'accueil</WhenWhere>
+        <details>Et voilà la soirée Halloween qui se termine... Mais la Convention n'est pas terminée :) Rendez-vous demain à 10h à Lille 3 au bâtiment G pour plein d'autres activités !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+</day>
+
+
+
+
+<!-- friday -->
+<day name="Vendredi" id="Vendredi">
+    <divider>10h00</divider>
+    <event>
+        <title>Ouverture du COIN</title>
+        <modalID>OuvertureConvention</modalID>
+        <WhenWhere>À Lille 3</WhenWhere>
+        <details>Rendez-vous à Lille 3 pour la suite de la COnvention INoubliable, qui continuera sans interruption jusqu'à dimanche midi ! ;) Le chemin est indiqué par des petits canards blancs tagués sur le sol depuis le métro Pont de Bois, situé sur la ligne 1. N'hésitez pas à explorer le bâtiment en quête de stands qui vous plairaient, et n'hésitez pas à poser de questions au staff !</details>
+        <alarmDefault>yes</alarmDefault>
+    </event>
+    <event>
+        <title>Pencho à l'accueil !</title>
+        <modalID>PenchoAccueil</modalID>
+        <WhenWhere>À 10h pile poil, à l'accueil</WhenWhere>
+        <details>Pencho se charge de l'accueil ! Elle est trop cool Pencho. ALORS ON VA LUI DIRE BONJOUR ET ON LUI FAIT UN BIZOU OK</details>
+        <alarmDefault>yes</alarmDefault>
+    </event>
+    
+    <divider>14h00</divider>    
+    <event>
+        <title>Tournoi de SSBB</title>
+        <modalID>TournoiSSBB</modalID>
+        <WhenWhere>À 14h00 au stand Jeux Vidéos</WhenWhere>
+        <details>Il y a un tournoi de Super Smash Bros au stand Jeux Vidéos ! Montrez-leur de quel bois vous vous chauffez !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>    
+    
+    <divider>19h40</divider>    
+    <event>
+        <title>Inscriptions aux JDR</title>
+        <modalID>InscriptionsJDRVendredi</modalID>
+        <WhenWhere>À 19h40 à l'accueil</WhenWhere>
+        <details>Les inscriptions pour les tables de jeux de rôle sont ouvertes ! Si vous voulez jouer, filez à l'accueil pour voir s'il y en a un qui vous plait et inscrivez-vous sur la feuille correspondante. Dêpechez-vous, les places sont limitées !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>20h00</divider>
+    <event>
+        <title>Début des JDR</title>
+        <modalID>DebutJDRVendredi</modalID>
+        <WhenWhere>20h00, lieu indiqué sur la feuille d'inscription</WhenWhere>
+        <details>Les jeux de rôle ont commencés... S'il n'y a personne dans la salle indiquée par la feuille d'inscription, courez retrouver le Maître du Jeu, qu'il/elle finisse son café et réunisse ses joueurs et joueuses. Passez une bonne soirée et amusez-vous bien !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+</day>
+
+
+
+
+<!-- saturday -->
+<day name="Samedi" id="Samedi">
+    <divider>13h00</divider>
+    <event>
+        <title>Jdrs de l'après-midi</title>
+        <modalID>JDRaprem</modalID>
+        <WhenWhere>À 13h00 à l'accueil</WhenWhere>
+        <details>Il y a des jeux de rôle tout l'après-midi. Si ça vous tente, jetez un coup d'oeil aux jeux proposés</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Trollball</title>
+        <modalID>Trollball</modalID>
+        <WhenWhere>À 13h00 salle G</WhenWhere>
+        <details>Vous avez envie de vous défouler ? Venez participer à une partie de trollball en salle G ! Il s'agit d'un jeu qui oppose deux camps où chaque personne est équipée d'une épée en mousse. Le but est de s'emparer d'une tête de troll et de la placer dans le camp adverse ! Mais attention ! Une touche d'une épée amie ou ennemie, et on est éliminé et on doit se mettre à genou au sol !</details>
+        <WhenWhereSecondary>Consignes de sécurité</WhenWhereSecondary>
+        <detailsSecondary>Ne pas attaquer avec la pointe (pas d'estoc) ni s'appuyer dessus, pas de coup violent, pas de coup dans les parties, pas dans la tête !</detailsSecondary>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    
+    <divider>17h00</divider>
+    <event>
+        <title>Loterie, discours, pot</title>
+        <modalID>Discours</modalID>
+        <WhenWhere>À 17h00 dans l'amphi J</WhenWhere>
+        <details>Rendez-vous dans l'amphi J pour participer à une loterie, écouter ce que les organisateurs et organisatrices ont à raconter de beau et pour un pot de remerciement... Parce que le COIN n'aurait jamais existé sans ses fier-e-s bénévoles et sans l'aide de nombreux contributeurs extérieurs</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+
+    <divider>19h40</divider>    
+    <event>
+        <title>Inscriptions JDR</title>
+        <modalID>InscriptionsJDRSamedi</modalID>
+        <WhenWhere>À 19h40 à l'accueil</WhenWhere>
+        <details>Les inscriptions pour les tables de jeux de rôle sont ouvertes ! Si vous voulez jouer, filez à l'accueil pour voir s'il y en a un qui vous plait et inscrivez-vous sur la feuille correspondante. Dêpechez-vous, les places sont limitées !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>20h00</divider>
+    <event>
+        <title>Début des JDR</title>
+        <modalID>DebutJDRSamedi</modalID>
+        <WhenWhere>20h00, lieu indiqué sur la feuille d'inscription</WhenWhere>
+        <details>Les jeux de rôle ont commencés... S'il n'y a personne dans la salle indiquée par la feuille d'inscription, courez retrouver le Maître du Jeu, qu'il/elle finisse son café et réunisse ses joueurs et joueuses. Passez une bonne soirée et amusez-vous bien !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+</day>
+
+
+
+
+<!-- sunday -->
+<day name="Dimanche" id="Dimanche">
+    <divider>10h00</divider>
+    <event>
+        <title>Fermeture veux vidéos</title>
+        <modalID>FermetureJeux</modalID>
+        <WhenWhere>10h00, stand jeux vidéos</WhenWhere>
+        <details>Le stand de jeux vidéos commence à fermer. S'il y a des jeux auxquels vous voulez rejouer une dernière fois avant de partir, c'est le moment !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>14h00</divider>
+    <event>
+        <title>Fin du COIN... Aidez-nous à ranger !</title>
+        <modalID>FinConvention</modalID>
+        <WhenWhere>À 14h00, à Lille 3</WhenWhere>
+        <details>Eh oui... Les meilleures choses ont une fin ! Mais on espère que vous vous êtes bien amusé-e-s ! :) Si vous pouvez, prenez le temps de nous aider à ranger, ce serait vraiment très apprécié !</details>
+        <alarmDefault>yes</alarmDefault>
+    </event>
+</day>
+
+
+
+
+</planning> <!-- End of planning -->

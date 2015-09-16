@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.konwhald.AppCOIN"
+        },
+        "nl.x-services.plugins.socialsharing": {
+            "PACKAGE_NAME": "com.konwhald.AppCOIN"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.konwhald.AppCOIN"
+        }
+    },
+    "dependent_plugins": {}
+}

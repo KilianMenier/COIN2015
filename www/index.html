@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<!--<Application COIN 2015, destinée à donner des infos sur la COnvention INoubliable de 2015>
+    Copyright (C) 2015  Konwhald aka Kilian Ménier (kilian.menier@gmx.com)
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>-->
+    
+<head>
+        <meta charset="utf-8">                                                          <!-- Charset --> 
+        <title>COnvention INoubliable 2015 ! :)</title>                                 <!-- Titre appli --> 
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,
+	    user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">                        <!-- Standard -->
+
+        <script src="cordova.js"></script>                                              <!-- (Needs be 1th +native notif) -->
+        <script src="lib/fastclick.js"></script>                                        <!-- No delay after tap -->
+        <script type="text/javascript" src="js/index.js"></script>                      <!-- Main script -->
+        <script type="text/javascript" src="js/XMLDisplay.js"></script>                 <!-- XML Display -->
+        
+        <script src="assets/ratchet/js/ratchet.js"></script>                            <!-- Include Ratchet JS interface -->
+        <link href="assets/ratchet/css/ratchet.min.css" rel="stylesheet">               <!-- Include Ratchet CSS theming --> 
+        <link href="css/styles.css" rel="stylesheet">                                   <!-- Include theming --> 
+                
+        <meta name="apple-mobile-web-app-capable" content="yes">                        <!-- Something something IOS -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">             <!-- Same shit -->
+
+</head>        
+<body>
+
+
+
+<!-- Header bar -->
+<header class="bar bar-nav runscript">
+    <h1 class="title">Programme COIN 2015</h1>
+    <a class="icon icon-bars pull-right" href="#popover"></a>
+</header>
+
+
+<!-- popover -->
+<div id="popover" class="popover">
+    <ul class="table-view">
+        <li class="table-view-cell">
+            <a href="halp.html" data-transition="slide-in">
+            <span class="media-object pull-left icon icon-home"></span>Perdu-e en chemin ?</a>
+        </li>
+        <li class="table-view-cell">
+            <a onclick="window.plugins.socialsharing.share('On m\'as mis au #COIN2015 ! ;) Je prendrais plein de photos !')">
+            <span class="media-object pull-left icon icon-sound"></span>Racontez comment c'est chouette !</a>
+        </li>
+        <li class="table-view-cell">
+            <a href="liste.html" data-transition="slide-in">
+            <span class="media-object pull-left icon icon-person"></span>Liste des bénévoles</a>
+        </li>        
+        <li class="table-view-cell">
+            <a href="apropos.html" data-transition="slide-in">
+            <span class="media-object pull-left icon icon-info"></span>A propos de l'appli</a>
+        </li>
+    </ul>
+</div>
+
+
+    
+<!-- Generate the WHOLE CONTENT, from navbar to modal dialogs, with content in-between -->
+<script>GeneratePage()</script>
+
+
+<!--
+<div class="content wraptocenter">
+  <img src="img/splash.png">
+</div>
+-->
+
+
+
+
+
+<!-- Old code -->
+<!-- <nav class="bar bar-header-secondary">
+    <script>WriteNavbar();</script>
+</nav>
+  
+MEGADIV --> <!-- Everything is contained in the Megadiv. The Megadiv is the universe.
+    Without Megadiv, nothing could scroll, everything would be chaos and despair
+    
+<div class="content">
+    <script>WritePlanning();</script>
+</div>
+<script>WriteModal()</script> -->
+
+
+
+
+
+
+
+
+    
+    
+    
+</body>         <!-- END OF BODY -->
+</html> <!-- END OF SHTEUMEULEU -->

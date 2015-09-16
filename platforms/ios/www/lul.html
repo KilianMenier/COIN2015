@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">                                                          <!-- Charset --> 
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,
+	user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">                        <!-- Standard -->
+
+        <!-- <script src="cordova.js"></script>                                            (Needs be 1th +native notif) -->
+    <!-- <script src="lib/fastclick.js"></script>                                        No delay after tap -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src="assets/ratchet/js/ratchet.js"></script>                            <!-- Include Ratchet JS interface -->
+        <link href="assets/ratchet/css/ratchet.min.css" rel="stylesheet">               <!-- Include Ratchet CSS theming --> 
+
+        <link href="css/styles.css" rel="stylesheet">               <!-- Include Ratchet CSS theming --> 
+        
+        
+        <script type="text/javascript" src="lib/l10n.js"></script>                      <!-- Handle l10n -->
+        <link rel="prefetch" type="application/l10n" href="infos.ini" />         <!-- Handle different languages -->   
+
+        
+        
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">                        <!-- Something something IOS -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">             <!-- Same shit -->           
+        
+</head>
+<body>
+
+
+
+<!-- Header bar -->
+<!-- Tout ce qui est barre de menus, menus, machins qui poppent, etc etc -->
+<header class="bar bar-nav"> <!-- Header -->
+    <h1 class="title" data-transition="slide-in">COnvention INoubliable 2015</h1>
+    <a class="icon icon-more-vertical pull-right" href="about.html"></a>
+</header>
+
+
+
+<!-- Controls -->
+    <nav class="bar bar-header-secondary">
+        <div class="segmented-control card">
+            <a class="control-item active" href="#Vendredi">Vendredi</a>
+            <a class="control-item" href="#Samedi">Samedi</a>
+            <a class="control-item" href="#Dimanche">Dimanche</a>
+        </div>
+    </nav>
+
+
+
+
+
+
+    
+    
+    
+<!-- MODAL DIALOGS -->
+<!-- Il semble que les fenetres modales s'affichent pas correctement quand elles se trouvent dans le megadiv plus bas. -->
+
+
+    <!-- INFOS VENDREDI -->
+    <div id="PenchoAccueil" class="modal">
+           <header class="bar bar-standard bar-nav bar-header">
+                <h1 class="title">Pencho fait l'accueil</h1>
+                <a class="icon icon-close pull-right" href="#PenchoAccueil" data-transition="slide-out"></a>
+            </header>
+        <div class="content">
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell table-view-divider">À 8h pile poil, à l'accueil</li>
+                <li class="table-view-cell"><a data-l10n-id="PenchoAccueil"></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+    
+    <div id="InscriptionsJDR" class="modal">
+           <header class="bar bar-standard bar-nav bar-header">
+                <h1 class="title">Inscriptions JDR</h1>
+                <a class="icon icon-close pull-right" href="#InscriptionsJDR" data-transition="slide-out"></a>
+            </header>
+        <div class="content">
+        <div class="card">
+            <ul class="table-view">
+                <li class="table-view-cell table-view-divider">À 19h30h, à l'accueil !</li>
+                <li class="table-view-cell"><a data-l10n-id="InscriptionsJDR"></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- MEGADIV -->
+<!-- Sans mégadiv, pas de scroll possible-->
+<div class="content"> <!-- MEGADIV -->
+
+ 
+
+<!-- Vendredi -->
+    <div id="Vendredi" class="control-content active"> <!-- Menu vendredi -->
+        <ul class="table-view">
+            <li class="table-view-cell table-view-divider">08:00</li>
+            
+            <li class="table-view-cell">
+                <a href="#PenchoAccueil" data-transition="slide-in">Ouverture de la convention ! \o/</a>
+                <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>            
+            
+            
+            <li class="table-view-cell">
+                <a href="#PenchoAccueil" data-transition="slide-in">Pencho fait l'accueil</a>
+                <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>
+
+            <li class="table-view-cell">
+                <a>Des trucs et des machins</a>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>            
+      
+            <li class="table-view-cell table-view-divider">14:00</li>
+            <li class="table-view-cell">
+                <a>A TAAAABLE !</a>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>
+
+            
+            <li class="table-view-cell">
+                <a>Tournoi de SSBB</a>
+                <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>            
+
+            
+            <li class="table-view-cell table-view-divider">16:00</li>
+            <li class="table-view-cell">
+                <a>Tournoi de DDR !</a>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>            
+            
+            
+            
+            
+            
+            <li class="table-view-cell table-view-divider">19:30</li>
+            <li class="table-view-cell">
+                <a href="#InscriptionsJDR">Inscriptions JDR !</a>
+                <div class="toggle active">
+                     <div class="toggle-handle"></div>
+                </div>
+            </li>            
+
+            
+            
+            
+            <li class="table-view-cell">
+                <a>Fin des jeux de plateaux</a>
+                <div class="toggle">
+                     <div class="toggle-handle"></div>
+                </div>
+            </li>   
+            
+            
+            
+            
+            
+            <li class="table-view-cell table-view-divider">20:00</li>
+            <li class="table-view-cell">
+                <a>Fin des inscriptions</a>
+                <div class="toggle">
+                     <div class="toggle-handle"></div>
+                </div>
+            </li>              
+            
+
+
+            
+            <li class="table-view-cell table-view-divider">22:00</li>
+            <li class="table-view-cell">
+                <a>Collation pour les rolistes</a>
+                <div class="toggle active">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>              
+            
+            <li class="table-view-cell table-view-divider">23:00</li>
+            <li class="table-view-cell">
+                <a>Fin des repas chauds</a>
+                <div class="toggle">
+                    <div class="toggle-handle"></div>
+                </div>
+            </li>               
+            
+            
+            
+        </ul>             
+</div> <!-- Fin menu vendredi -->
+
+
+<!-- FIN VENDREDI -->  
+    
+    
+    
+    
+    
+    
+    
+<!-- Samedi -->
+        <div id="Samedi" class="control-content active">
+            <ul class="table-view">
+                <li class="table-view-cell table-view-divider">08:00</li>
+                <li class="table-view-cell">
+                    <a>Atelier maquillage</a>
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+
+                <li class="table-view-cell table-view-divider">14:00</li>
+                <li class="table-view-cell">
+                    <a>GN Pirate ! ARR !</a>
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>                
+                
+                
+                
+                <li class="table-view-cell table-view-divider">19:30</li>
+                <li class="table-view-cell">
+                    <a href="#InscriptionsJDR">Inscriptions JDR !</a>
+                    <div class="toggle active">
+                         <div class="toggle-handle"></div>
+                    </div>
+                </li>            
+
+            
+                <li class="table-view-cell table-view-divider">20:00</li>
+                <li class="table-view-cell">
+                    <a>Fin des inscriptions</a>
+                    <div class="toggle">
+                         <div class="toggle-handle"></div>
+                    </div>
+                </li>  
+                    
+            </ul>
+        </div> <!-- FIN SAMEDI -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- Dimanche -->  
+      <div id="Dimanche" class="control-content active"> <!-- Menu dimanche -->
+            <ul class="table-view">
+                <li class="table-view-cell table-view-divider">08:00</li>
+                <li class="table-view-cell">
+                    <a>Fermeture stands jeux rétro</a>
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                    
+                <li class="table-view-cell table-view-divider">14:00</li>
+                <li class="table-view-cell">
+                    <a>Fin du COIN 2015... Aidez-nous à ranger !</a>
+                    <div class="toggle active">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>      
+            </ul>         
+        </div> <!-- Fin menu dimanche -->
+  
+  
+    
+  
+  
+  
+
+
+
+
+</div> <!-- END OF MEGADIV -->
+
+
+
+</body>         <!-- END OF BODY -->
+</html> <!-- END OF SHTEUMEULEU -->

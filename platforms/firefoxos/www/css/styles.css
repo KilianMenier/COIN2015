@@ -1,0 +1,44 @@
+
+/* Barres */
+
+.icon {
+    color: white;
+}
+
+
+.title {
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: darkred;
+}
+
+
+/* Séparateurs */
+
+
+
+.table-view-divider {
+    /*border-top: 1px double darkred;*/
+    color: black;
+    background-color: lightgrey;
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+}
+
+
+
+
+/* Boutons de selection pour le jour */
+
+.segmented-control .control-item:active {
+    background-color: darkred;
+}
+
+
+.segmented-control .control-item.active {
+    background-color: darkred;
+    color: white;
+    text-shadow: 2px 2px black;
+    border: 1px groove #580000 ;
+}
