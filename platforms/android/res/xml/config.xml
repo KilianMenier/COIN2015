@@ -8,26 +8,19 @@
     <feature name="SocialSharing">
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
     </feature>
-    <feature name="SplashScreen">
-        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
-        <param name="onload" value="true" />
-    </feature>
     <allow-intent href="market:*" />
+    <preference name="android-targetSdkVersion" value="22" />
+    <preference name="android-minSdkVersion" value="15" />
     <name>COnvention INoubliable 2015</name>
     <description>
         Une application pour la COnvention INoubliable lilloise, codée par Konwhald :3, sous licence GPL-3.0
-        Ne manquez rien des évènements de la journée !
-
-        
+        Ne manquez rien des évènements de la journée ! (Site du COIN : https://conventioninoubliable.com)
     </description>
-    <author email="kilian.menier@gmx.com" href="http://www.taverne-oubliee.com/">
-        Konwhald
+    <author email="kilian.menier@gmx.com" href="https://github.com/KilianMenier">
+        Kilian Ménier
     </author>
     <content src="index.html" />
     <icon src="coin.png" />
-    <preference name="SplashScreen" value="splash.png" />
-    <preference name="AutoHideSplashScreen" value="true" />
-    <preference name="SplashScreenDelay" value="3000" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

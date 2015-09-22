@@ -11,29 +11,25 @@
     
     
 /* --------------------------------- Event Registration -------------------------------- */
-    document.addEventListener('deviceready', function () {
-        StatusBar.overlaysWebView( false );
-        StatusBar.backgroundColorByHexString('#ffffff');
-        StatusBar.styleDefault();
-        FastClick.attach(document.body);
-        if (navigator.notification) { // Override default HTML alert with native dialog
-            window.alert = function (message) {
-                navigator.notification.alert(
-                    message,                // message
-                    null,                   // callback
-                    "Application COIN",     // title
-                    'OK'                    // buttonName
-                );
-            };
-        }
-        pictureSource=navigator.camera.PictureSourceType;
-        destinationType=navigator.camera.DestinationType;
-        
+document.addEventListener('deviceready', function () {
+    if (navigator.notification) { // Override default HTML alert with native dialog
+        window.alert = function (message) {
+            navigator.notification.alert(
+                message, // message
+                null, // callback
+                "Planning COIN 2015", // title
+                'Okay !' // buttonName
+            );
+        };
+    }
         
     }, false); // End deviceready
 
 
 /* ---------------------------------- Alarm Functions ---------------------------------- */
+
+    // 1969-12-31 16:00
+
 
     /* Enable or disable alarm - */
     function alarmSetUnset(id) {

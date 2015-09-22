@@ -18,9 +18,6 @@
         },
         "nl.x-services.plugins.socialsharing": {
             "PACKAGE_NAME": "com.konwhald.AppCOIN"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.konwhald.AppCOIN"
         }
     },
     "dependent_plugins": {}

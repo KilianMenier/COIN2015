@@ -39,64 +39,68 @@ function WriteNavbar() {
 
 
 
-/* Create day */
+/* Write day planning */
 function WriteDay(given_day) {
-    d = given_day.childNodes
     
+    // Get all stuff from given_day
+    var d = given_day.childNodes
+
+    // For each element
     for (ii=0;ii<d.length;ii++)
     {
-        what = d[ii].nodeName
-        if (what == "divider") {   
-            document.write('<li class="table-view-cell table-view-divider">');
-            document.write(d[ii].childNodes[0].nodeValue);
-            document.write("</li>");
+        
+        // Initialise stuff
+        var what = d[ii].nodeName
+        var towrite = ""
+        
+        
+        // If the element is a divider
+        if (what == "divider") {
+            towrite = '<li class="table-view-cell table-view-divider">' + d[ii].childNodes[0].nodeValue + "</li>"
+            document.write(towrite); // Write to doc
         }
+        // Else if it's an event
         else if (what == "event") {
-            document.write('<li class="table-view-cell"><a>');                                  //Create entry
-            document.write(d[ii].getElementsByTagName("title")[0].childNodes[0].nodeValue);      //Display title
-            document.write('</a><a class="btn btn-positive" href="#');                          //Add button
-            document.write(d[ii].getElementsByTagName("modalID")[0].childNodes[0].nodeValue);    //Add link to modal
-            document.write('"><span class="icon icon-search">Détails</span></a></li>'); //Finish entry         
+            
+            // Create string : Start element + title + button w/ link to modal + End button + label + end element
+            towrite = '<li class="table-view-cell">' + 
+            d[ii].getElementsByTagName("title")[0].childNodes[0].nodeValue + '<a class="btn btn-positive" href="data/' + d[ii].getElementsByTagName("modalID")[0].childNodes[0].nodeValue + '.html" data-transition="slide-in"><span class="icon icon-search">Détails</span></a></li>'
+             // Write to doc
+            document.write(towrite);
         }
         //else { alert("Err, got " + what.nodeName)}
-        //alert(i)
     }  
 }
+
+
+
 
 
 /* Write content of page */
 function WritePlanning() {
     
     // Load XML, get relevant elements
-    //xmlDoc = loadxml("planning.xml")
-    //x=xmlDoc.getElementsByTagName("day");
-        var ActiveContent=false
+    xmlDoc = loadxml("planning.xml")
+    x=xmlDoc.getElementsByTagName("day");
+
     
     // Loop through nodes to write each day
     for(i=0; i<x.length; i++) // For each day
     {
+        // init
+        var write = ""
+        
         // Start day block
-        document.write('<div id="')
-        att = x.item(i).attributes.getNamedItem('id');
-        document.write(att.value);
-        document.write('" class="control-content active"><ul class="table-view">')
-        //alert("running: " + x[i].nodeName)
+        write = '<div id="' + x.item(i).attributes.getNamedItem('id').value + '" class="control-content active"><ul class="table-view">' + '<li class="table-view-cell table-view-divider thisisaday">' + x.item(i).attributes.getNamedItem('name').value
         
-        
-        // Display megadivider for the day
-        document.write('<li class="table-view-cell table-view-divider thisisaday">');
-        att = x.item(i).attributes.getNamedItem('name');
-        document.write("Évènements " + att.value);
-        document.write("</li>");
+        // Start day block and write divider
+        document.write(write);
         
         // Write whole day
         WriteDay(x[i]);
         
         // End day block
         document.write('</ul></div>');
-
-
-        //alert("itération: [" + i + "] running: [" + x[i].nodeName + "] att id: [" + att.value + "]")
         
     }
 }
@@ -110,40 +114,41 @@ function WriteModal() {
     // Load XML, get relevant elements
     xmlDoc = loadxml("planning.xml")
     wholefile=xmlDoc.getElementsByTagName("event");
-    
+    //alert('modal')
     
     for (m=0;m<wholefile.length;m++)
     {
         // modalID is used twice, store it to get quicker (not much)
         // Write a modal for each event
-        lol=wholefile[m].getElementsByTagName("modalID")[0].childNodes[0].nodeValue
-        document.write('<div id="');
-        document.write(lol); 
-        document.write('"class="modal"> <header class="bar bar-standard bar-nav bar-header"><h1 class="title">');
-        document.write(wholefile[m].getElementsByTagName("title")[0].childNodes[0].nodeValue); 
-        document.write('</h1><a class="icon icon-close pull-right" href="#');
-        document.write(lol); 
-        document.write('"></a></header><div class="content"><div class="card"><ul class="table-view"><li class="table-view-cell table-view-divider">');
-        document.write(wholefile[m].getElementsByTagName("WhenWhere")[0].childNodes[0].nodeValue);
-        document.write('</li><li class="table-view-cell">');
-        document.write(wholefile[m].getElementsByTagName("details")[0].childNodes[0].nodeValue);
-        document.write('</li></ul></div>');
+        var towrite = ""
+        var modalid=wholefile[m].getElementsByTagName("modalID")[0].childNodes[0].nodeValue
         
+        towrite = '<div id="' + modalid + '" class="modal"> <header class="bar bar-standard bar-nav bar-header"><h1 class="title">' + wholefile[m].getElementsByTagName("title")[0].childNodes[0].nodeValue + '</h1><a class="icon icon-close pull-right" href="#' + modalid + '"></a></header><div class="content"><div class="card"><ul class="table-view"><li class="table-view-cell table-view-divider">' + wholefile[m].getElementsByTagName("WhenWhere")[0].childNodes[0].nodeValue + '</li><li class="table-view-cell">' + wholefile[m].getElementsByTagName("details")[0].childNodes[0].nodeValue + '</li></ul></div>'
         
         // If there is a secondary text (secondary WhenWhere and details), include it
-        if ((wholefile[m].getElementsByTagName("WhenWhereSecondary")[0]) && (wholefile[m].getElementsByTagName("detailsSecondary")[0])) {
-            document.write('<div class="card"><ul class="table-view"><li class="table-view-cell table-view-divider">');
-            document.write(wholefile[m].getElementsByTagName("WhenWhereSecondary")[0].childNodes[0].nodeValue);
-            document.write('</li><li class="table-view-cell">');
-            document.write(wholefile[m].getElementsByTagName("detailsSecondary")[0].childNodes[0].nodeValue);
-            document.write('</li></ul></div>');  
+        if ((wholefile[m].getElementsByTagName("WhenWhereSecondary")[0]) && (wholefile[m].getElementsByTagName("detailsSecondary")[0])) { 
+            towrite = towrite + '<div class="card"><ul class="table-view"><li class="table-view-cell table-view-divider">' + wholefile[m].getElementsByTagName("WhenWhereSecondary")[0].childNodes[0].nodeValue + '</li><li class="table-view-cell">' + wholefile[m].getElementsByTagName("detailsSecondary")[0].childNodes[0].nodeValue + '</li></ul></div>'
         }
         
         
         // With alarms working
-        //document.write('<div class="card"><ul class="table-view"><li class="table-view-cell">Alarme évènement :<div class="toggle active"><div class="toggle-handle"></div></div></li></ul></div>');
+        /*
+        towrite = towrite + '<div class="card"><ul class="table-view"><li class="table-view-cell">Alarme évènement :<div class="toggle '
         
-        document.write('</div></div><br>');        
+        // If alarm is on by default
+        if (wholefile[m].getElementsByTagName("alarmDefault")[0].childNodes[0].nodeValue == "yes") { 
+            towrite = towrite + 'active'
+        }
+        towrite = towrite + '"><div class="toggle-handle"></div></div></li></ul></div>'
+        */
+        
+        
+        towrite = towrite + '</div></div>'
+
+        // Write everything
+        document.write(towrite);
+        //document.body.appendChild(towrite); 
+        //alert('writemodal')
     }  
 }
 
@@ -153,32 +158,17 @@ function WriteModal() {
 
 /* Generate page */
 function GeneratePage() {
-    
     // Load database
     xmlDoc = loadxml("planning.xml")
     x=xmlDoc.getElementsByTagName("day");
     
-    
     // Navigation bar
     document.write('<nav class="bar bar-header-secondary">');
     WriteNavbar();
-    document.write('</nav>    <div class="content">');
+    document.write('</nav>    <div class="content" id="content">');
     
     // And planning
     WritePlanning()
     document.write('</div>');        
-    
-    // Modal dialogs
-    WriteModal()
-    /*  
-    <!-- MEGADIV --> <!-- Everything is contained in the Megadiv. The Megadiv is the universe.
-    Without Megadiv, nothing could scroll, everything would be chaos and despair -->
-    */
-
 }
-
-
-
-
-
 

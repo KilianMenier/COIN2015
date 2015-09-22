@@ -23,26 +23,26 @@
         content="width=device-width, initial-scale=1.0,
 	    user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">                        <!-- Standard -->
 
-        <script src="cordova.js"></script>                                              <!-- (Needs be 1th +native notif) -->
-        <script src="lib/fastclick.js"></script>                                        <!-- No delay after tap -->
+	    
+	    <script src="cordova.js"></script>                                              <!-- (Needs be 1th +native notif) -->
+        <script src="assets/fastclick.js"></script>                                        <!-- No delay after tap -->
+
         <script type="text/javascript" src="js/index.js"></script>                      <!-- Main script -->
         <script type="text/javascript" src="js/XMLDisplay.js"></script>                 <!-- XML Display -->
-        
-        <script src="assets/ratchet/js/ratchet.js"></script>                            <!-- Include Ratchet JS interface -->
+
+        <script src="assets/ratchet/js/ratchet.js"></script>                            <!-- Include Ratchet JS interface --> 
         <link href="assets/ratchet/css/ratchet.min.css" rel="stylesheet">               <!-- Include Ratchet CSS theming --> 
         <link href="css/styles.css" rel="stylesheet">                                   <!-- Include theming --> 
-                
+      
         <meta name="apple-mobile-web-app-capable" content="yes">                        <!-- Something something IOS -->
         <meta name="apple-mobile-web-app-status-bar-style" content="black">             <!-- Same shit -->
-
 </head>        
 <body>
 
 
-
 <!-- Header bar -->
-<header class="bar bar-nav runscript">
-    <h1 class="title">Programme COIN 2015</h1>
+<header class="bar bar-nav">
+    <h1 class="title">Planning COIN 2015</h1>
     <a class="icon icon-bars pull-right" href="#popover"></a>
 </header>
 
@@ -56,57 +56,36 @@
         </li>
         <li class="table-view-cell">
             <a onclick="window.plugins.socialsharing.share('On m\'as mis au #COIN2015 ! ;) Je prendrais plein de photos !')">
-            <span class="media-object pull-left icon icon-sound"></span>Racontez comment c'est chouette !</a>
+            <span class="media-object pull-left icon icon-sound"></span>Racontez à vos ami-e-s !</a>
         </li>
         <li class="table-view-cell">
-            <a href="liste.html" data-transition="slide-in">
+            <a href="https://mobile.twitter.com/COIN_Lille/tweets">
+            <span class="media-object pull-left icon icon-list"></span>Changements en temps réel (twitter)</a>
+        </li>        
+        <li class="table-view-cell" data-transition="slide-in">
+            <a href="liste.html">
             <span class="media-object pull-left icon icon-person"></span>Liste des bénévoles</a>
         </li>        
-        <li class="table-view-cell">
-            <a href="apropos.html" data-transition="slide-in">
+        <li class="table-view-cell" data-transition="slide-in">
+            <a href="apropos.html">
             <span class="media-object pull-left icon icon-info"></span>A propos de l'appli</a>
         </li>
     </ul>
 </div>
 
 
-    
 <!-- Generate the WHOLE CONTENT, from navbar to modal dialogs, with content in-between -->
 <script>GeneratePage()</script>
 
 
-<!--
-<div class="content wraptocenter">
-  <img src="img/splash.png">
-</div>
--->
+<!-- Old code // Can replace GeneratePage()
+<nav class="bar bar-header-secondary"><script>WriteNavbar()</script></nav>
+<div class="content"><script>WritePlanning()</script></div>-->
 
 
 
 
 
-<!-- Old code -->
-<!-- <nav class="bar bar-header-secondary">
-    <script>WriteNavbar();</script>
-</nav>
-  
-MEGADIV --> <!-- Everything is contained in the Megadiv. The Megadiv is the universe.
-    Without Megadiv, nothing could scroll, everything would be chaos and despair
-    
-<div class="content">
-    <script>WritePlanning();</script>
-</div>
-<script>WriteModal()</script> -->
-
-
-
-
-
-
-
-
-    
-    
     
 </body>         <!-- END OF BODY -->
 </html> <!-- END OF SHTEUMEULEU -->

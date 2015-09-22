@@ -11,10 +11,6 @@
                         {
                             "xml": "<feature name=\"SocialSharing\"><param name=\"ios-package\" value=\"SocialSharing\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
                         }
                     ]
                 }
@@ -35,12 +31,7 @@
                     ],
                     "ImageIO.framework": [],
                     "CoreLocation.framework": [],
-                    "CoreGraphics.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
+                    "CoreGraphics.framework": [],
                     "AssetsLibrary.framework": [],
                     "MobileCoreServices.framework": [],
                     "AVFoundation.framework": [],
@@ -59,9 +50,6 @@
             "PACKAGE_NAME": "com.konwhald.AppCOIN"
         },
         "nl.x-services.plugins.socialsharing": {
-            "PACKAGE_NAME": "com.konwhald.AppCOIN"
-        },
-        "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.konwhald.AppCOIN"
         }
     },

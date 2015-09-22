@@ -2,21 +2,18 @@
 /* Styles CSS pour l'appli COIN */
 
 
-/* Barres */
+/* Titlebars */
 .title {
     color: white;
-    text-shadow: 2px 2px black;
     background-color: DarkRed;
 }
 
+/*    -webkit-backface-visibility: hidden;
+ -webkit-overflow-scrolling: auto;**/
+.content {
+    -webkit-transform: translate3d(0,0,0);
 
-
-/* Font
-body {
-    font-family: 'Noto Serif', serif;
-} */
-
-
+}
 
 
 /* Fix for icons */
@@ -26,11 +23,8 @@ body {
 
 .icon-bars,.icon-close,.icon-left-nav {
     color: white;
-    text-shadow: 2px 2px black;
 }
-
-
-    
+ 
 
 /* Dividers */
 .table-view-divider {
@@ -41,31 +35,17 @@ body {
 }
 
 .thisisaday {
-    border-top: 1px double darkred;
+    /*border-top: 1px double darkred;*/
     color: white;
-    text-shadow: 2px 2px black;
     background-color: DarkRed;
     text-align: center;
-}
-
-
-/* Selection buttons */
-.segmented-control .control-item:active {
-    background-color:  DarkRed;
 }
 
 
 .segmented-control .control-item.active {
     background-color:  DarkRed;
     color: white;
-    border: 1px groove #580000 ;
-}
-
-
-/* ratchet don't show links as links, fix it for when we need it*/
-.link {
-    color: blue;
-    text-decoration: underline;
+    /*border: 1px groove #580000;*/
 }
 
 
