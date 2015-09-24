@@ -74,14 +74,31 @@
 </div>
 
 
-<!-- Generate the WHOLE CONTENT, from navbar to modal dialogs, with content in-between -->
+<!-- Generate the WHOLE CONTENT, from navbar to modal dialogs, with content in-between
+
+<script>
+    // Load database
+    xmlDoc = loadxml("planning.xml")
+    x=xmlDoc.getElementsByTagName("day");
+    
+    // Navigation bar
+    document.write('<nav class="bar bar-header-secondary">');
+    WriteNavbar();
+    document.write('</nav>    <div class="content" id="content">');
+    
+    // And planning
+    WritePlanning()
+    document.write('</div>');      
+</script>-->
+
 <script>GeneratePage()</script>
+
+
 
 
 <!-- Old code // Can replace GeneratePage()
 <nav class="bar bar-header-secondary"><script>WriteNavbar()</script></nav>
 <div class="content"><script>WritePlanning()</script></div>-->
-
 
 
 

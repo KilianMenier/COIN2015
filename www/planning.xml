@@ -75,13 +75,6 @@
         <alarmDefault>yes</alarmDefault>
     </event>
     <event>
-        <title>Pencho à l'accueil !</title>
-        <modalID>PenchoAccueil</modalID>
-        <WhenWhere>À 10h pile poil, à l'accueil</WhenWhere>
-        <details>Pencho se charge de l'accueil ! Elle est trop cool Pencho. ALORS ON VA LUI DIRE BONJOUR ET ON LUI FAIT UN BIZOU OK</details>
-        <alarmDefault>yes</alarmDefault>
-    </event>
-    <event>
         <title>Projection de films</title>
         <modalID>ProjFilms</modalID>
         <WhenWhere>Vers 10h00 au Kino</WhenWhere>
@@ -99,6 +92,29 @@
         <detailsSecondary> Super Smash Bros, ou SSB, est un jeu de bagarre avec plusieurs personnages de plein de franchises Nintendo. Le but est d'éjecter ses adversaires de l'arène (qui a l'apparence d'un décor d'une franchise Nintendo) en jouant un personnage de son choix. Plus on prend de coups, plus on est facile à éjecter... Et pour renverser le cours de la bagarre, il y a des objets qui peuvent être très utiles ! (Note aux parents : Ce jeu est pour toute la famille :) )</detailsSecondary>        
         <alarmDefault>no</alarmDefault>
     </event>    
+
+
+    <divider>14h30</divider>    
+    <event>
+        <title>Concours de cosplay</title>
+        <modalID>Cosplay</modalID>
+        <WhenWhere>À 14h30 dans le hall du bâtiment C</WhenWhere>
+        <details>Petit concours cosplay organisé durant la Convention Inoubliable (Le COIN) thème pirate, à Lille 3
+            Les règles : Vous venez avec votre cosplay, vous montez sur scène, faites une petite prestation et voilà ! 
+            - Le thème de la convention étant les pirates, il y aura un lot pirate pour le meilleur cosplay collant à ce thème, puis comme de bien entendu un lot pour le meilleur cosplay tout court, tout thème confondu et enfin pour le coup de coeur du Jury ! 
+            - Fin des inscriptions : 3 jours avant la convention, mais comment s'inscrire ?! Publiez simplement "JE PARTICIPE" dans cet event et je prendrais contact avec vous ! Pensez donc à checker la catégorie "autre" des messages facebook !
+            - Merci d'envoyer par mail à lune.jules@gmail.com vos MP3 3 jours maximum avant la convention, sinon votre inscription ne sera pas prise en compte 
+            Voilà ! Enjoyez !
+            
+            </details>
+        <WhenWhereSecondary>Cosplay ?</WhenWhereSecondary>
+        <detailsSecondary>est un loisir qui consiste à jouer le rôle de ses personnages en imitant leur costume, leurs cheveux — à l'aide d'une perruque ou en réalisant la même coupe de cheveux que celle du personnage — et leur maquillage. Les thèmes les plus courants sont les personnages de mangas, de bande dessinée, d'animation japonaise, de dessins animés, de tokusatsu, de films, de jeux vidéo et de comics mais viennent à inclure également les séries télévisées et toute sorte de costumes à thème. On appelle les pratiquants des cosplayers. (Merci wikipedia ;) )</detailsSecondary>        
+        <alarmDefault>no</alarmDefault>
+    </event> 
+
+
+
+
     
     <divider>19h40</divider>    
     <event>
@@ -136,9 +152,9 @@
         <title>Trollball</title>
         <modalID>Trollball</modalID>
         <WhenWhere>À 13h00 salle G</WhenWhere>
-        <details>Vous avez envie de vous défouler ? Venez participer à une partie de trollball en salle G ! Il s'agit d'un jeu qui oppose deux camps où chaque personne est équipée d'une épée en mousse. Le but est de s'emparer d'une tête de troll et de la placer dans le camp adverse ! Mais attention ! Une touche d'une épée amie ou ennemie, et on est éliminé et on doit se mettre à genou au sol !</details>
+        <details>Vous avez envie de vous défouler ? Venez participer à une partie de trollball en salle G ! Il s'agit d'un jeu qui oppose deux camps où chaque personne est équipée d'une épée en mousse. Le but est de s'emparer d'une tête de troll et de la placer dans le camp adverse ! Mais attention ! Une touche d'une épée amie ou ennemie, et on est éliminé et on doit mettre un genou au sol !</details>
         <WhenWhereSecondary>Consignes de sécurité</WhenWhereSecondary>
-        <detailsSecondary>Ces règles doivent absolument être respectées, pour la sécurité des personnes et du matériel : Ne pas attaquer avec la pointe (pas d'estoc) ni s'appuyer dessus, pas de coup violent, pas de coup dans les parties, pas de coup dans la tête ! Toute personne ne cherchant pas à respecter ces consignes et/ou blessant d'autres personnes peuvent être interdites d'accès au trollball par les bénévoles qui surveillent le stand</detailsSecondary>
+        <detailsSecondary>Ces règles doivent absolument être respectées, pour la sécurité des personnes et du matériel : Ne pas attaquer avec la pointe (pas d'estoc) ni s'appuyer dessus, pas de coup violent, pas de coup dans les parties, pas de coup dans la tête ! Toute personne ne cherchant pas à respecter ces consignes et/ou blessant d'autres personnes peuvent être interdites d'accès au trollball par les bénévoles qui surveillent le stand. En participant, vous acceptez implicitement ces règles. Si vous avez des questions, demandez aux bénévoles</detailsSecondary>
         <alarmDefault>no</alarmDefault>
     </event>
     
