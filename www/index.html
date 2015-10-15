@@ -30,8 +30,13 @@
         <script type="text/javascript" src="js/index.js"></script>                      <!-- Main script -->
         <script type="text/javascript" src="js/XMLDisplay.js"></script>                 <!-- XML Display -->
 
-        <script src="assets/ratchet/js/ratchet.js"></script>                            <!-- Include Ratchet JS interface --> 
-        <link href="assets/ratchet/css/ratchet.min.css" rel="stylesheet">               <!-- Include Ratchet CSS theming --> 
+        <script src="assets/ratchet/js/ratchet.min.js"></script>                        <!-- Include Ratchet JS interface --> 
+        <link href="assets/ratchet/css/ratchet.min.css" rel="stylesheet">               <!-- Include Ratchet CSS theming -->
+        
+        <script src="assets/stroll/js/stroll.min.js"></script>                        <!-- Include scrolling effects --> 
+        <link href="assets/stroll/css/stroll.min.css" rel="stylesheet">               <!-- Include stroll -->         
+        
+        
         <link href="css/styles.css" rel="stylesheet">                                   <!-- Include theming --> 
       
         <meta name="apple-mobile-web-app-capable" content="yes">                        <!-- Something something IOS -->
@@ -55,20 +60,20 @@
             <span class="media-object pull-left icon icon-home"></span>Perdu-e en chemin ?</a>
         </li>
         <li class="table-view-cell">
-            <a onclick="window.plugins.socialsharing.share('On m\'as mis au #COIN2015 ! ;) Je prendrais plein de photos !')">
+            <a onclick="window.plugins.socialsharing.share('On m\'as mis au COIN ! ;) #COINLille2015')">
             <span class="media-object pull-left icon icon-sound"></span>Racontez à vos ami-e-s !</a>
         </li>
-        <li class="table-view-cell">
-            <a href="https://mobile.twitter.com/COIN_Lille/tweets">
-            <span class="media-object pull-left icon icon-list"></span>Changements en temps réel (twitter)</a>
-        </li>        
+        <li class="table-view-cell" data-transition="slide-in">
+            <a href="menu.html">
+            <span class="media-object pull-left icon icon-info"></span>Menus</a>
+        </li>     
         <li class="table-view-cell" data-transition="slide-in">
             <a href="liste.html">
-            <span class="media-object pull-left icon icon-person"></span>Liste des bénévoles</a>
+            <span class="media-object pull-left icon icon-person"></span>Contacts et liens</a>
         </li>        
         <li class="table-view-cell" data-transition="slide-in">
             <a href="apropos.html">
-            <span class="media-object pull-left icon icon-info"></span>A propos de l'appli</a>
+            <span class="media-object pull-left icon icon-code"></span>A propos de l'appli</a>
         </li>
     </ul>
 </div>
@@ -92,6 +97,7 @@
 </script>-->
 
 <script>GeneratePage()</script>
+<script>stroll.bind( '#main ul' );</script>
 
 
 

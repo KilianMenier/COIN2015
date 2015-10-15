@@ -63,8 +63,8 @@ function WriteDay(given_day) {
         else if (what == "event") {
             
             // Create string : Start element + title + button w/ link to modal + End button + label + end element
-            towrite = '<li class="table-view-cell">' + 
-            d[ii].getElementsByTagName("title")[0].childNodes[0].nodeValue + '<a class="btn btn-positive" href="data/' + d[ii].getElementsByTagName("modalID")[0].childNodes[0].nodeValue + '.html" data-transition="slide-in"><span class="icon icon-search">Détails</span></a></li>'
+            towrite = '<li class="table-view-cell"><a>' + 
+            d[ii].getElementsByTagName("title")[0].childNodes[0].nodeValue + '</a><a class="btn btn-positive" href="Auto-' + d[ii].getElementsByTagName("modalID")[0].childNodes[0].nodeValue + '.html" data-transition="slide-in"><span class="icon icon-search">Détails</span></a></li>'
              // Write to doc
             document.write(towrite);
         }
@@ -88,7 +88,7 @@ function WritePlanning() {
         var write = ""
         
         // Start day block
-        write = '<div id="' + x.item(i).attributes.getNamedItem('id').value + '" class="control-content active"><ul class="table-view">' + '<li class="table-view-cell table-view-divider thisisaday">' + x.item(i).attributes.getNamedItem('name').value
+        write = '<div id="' + x.item(i).attributes.getNamedItem('id').value + '" class="control-content active"><ul class="table-view flip">' + '<li class="table-view-cell table-view-divider thisisaday">' + x.item(i).attributes.getNamedItem('name').value
         
         // Start day block and write divider
         document.write(write);
@@ -116,7 +116,7 @@ function GeneratePage() {
     // Navigation bar
     document.write('<nav class="bar bar-header-secondary">');
     WriteNavbar();
-    document.write('</nav>    <div class="content" id="content">');
+    document.write('</nav>    <div class="content" id="content card">');
     
     // And planning
     WritePlanning()

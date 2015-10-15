@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.kmenier.AppCOIN" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="kilianmenier.coin.twentyfifteen" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>COnvention INoubliable 2015</name>
     <description>
-        Une application pour la COnvention INoubliable lilloise, codée par Konwhald :3, sous licence GPL-3.0
+        Une application pour la COnvention INoubliable lilloise, codée par Konwhald, sous licence libre
         Ne manquez rien des évènements de la journée ! (Site du COIN : https://conventioninoubliable.com)
     </description>
     <author email="kilian.menier@gmx.com" href="https://github.com/KilianMenier">
@@ -20,12 +20,11 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    
-    
+      
     <platform name="android">
         <allow-intent href="market:*" />
-        <preference name="android-targetSdkVersion" value="22"/>
         <preference name="android-minSdkVersion" value="15"/>
+        <preference name="android-targetSdkVersion" value="22"/>
     </platform>
     
     <platform name="ios">

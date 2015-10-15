@@ -10,7 +10,7 @@
 }
 
 /*    -webkit-backface-visibility: hidden;
- -webkit-overflow-scrolling: auto;**/
+ -webkit-overflow-scrolling: auto;*       text-align: justify;*   */
 .content {
     -webkit-transform: translate3d(0,0,0);
 }
@@ -33,6 +33,12 @@
     background-color: silver;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+
+.table-view-cell {
+    padding-right: 13px;
+
 }
 
 .thisisaday {

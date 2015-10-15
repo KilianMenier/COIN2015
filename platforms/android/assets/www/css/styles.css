@@ -6,13 +6,13 @@
 .title {
     color: white;
     background-color: DarkRed;
+    text-shadow: 2px 2px black;
 }
 
 /*    -webkit-backface-visibility: hidden;
- -webkit-overflow-scrolling: auto;**/
+ -webkit-overflow-scrolling: auto;*       text-align: justify;*   */
 .content {
     -webkit-transform: translate3d(0,0,0);
-
 }
 
 
@@ -23,6 +23,7 @@
 
 .icon-bars,.icon-close,.icon-left-nav {
     color: white;
+    text-shadow: 2px 2px black;
 }
  
 
@@ -30,15 +31,24 @@
 .table-view-divider {
     color: black;
     background-color: silver;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.table-view-cell {
+    padding-right: 13px;
+
 }
 
 .thisisaday {
     /*border-top: 1px double darkred;*/
     color: white;
     background-color: DarkRed;
-    text-align: center;
+    text-shadow: 2px 2px black;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center
 }
 
 
@@ -47,6 +57,3 @@
     color: white;
     /*border: 1px groove #580000;*/
 }
-
-
-

@@ -46,10 +46,10 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "nl.x-services.plugins.socialsharing": {
             "PACKAGE_NAME": "com.konwhald.AppCOIN"
         },
-        "nl.x-services.plugins.socialsharing": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.konwhald.AppCOIN"
         }
     },

@@ -20,6 +20,7 @@ all_events = xmldoc.getElementsByTagName('event')
 for eventNode in all_events:
     print("Starting another loop...")
     event = eventNode.childNodes
+    otherdetails = False
     
     # Get event name    
     for i in event:
@@ -55,18 +56,18 @@ for eventNode in all_events:
             break        
         
     # If yes, get informations too
-    if otherdetails:            
+    if otherdetails:
         for i in event:
             if i.nodeName == "detailsSecondary":
                 detailsSecondary = i.childNodes[0].nodeValue
                 break        
-        
+
     # Logging is important
     print("Got " + title + " on " + modalID)
           
     # Create needed file
     path = "data/"
-    name = path + modalID + ".html"
+    name = "Auto-" + modalID + ".html"
     file = open(name, 'w')   
     
     towrite = """<!DOCTYPE html>

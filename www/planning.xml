@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <planning> <!-- File containing all events-->
-<!-- Important note : no space or strange character for modalID, or ratchet will be unable to fire it -->
+<!-- Important note : no space or strange character for modalID, it's a file name -->
     
     
 
@@ -74,24 +74,185 @@
         <details>Rendez-vous à Lille 3 pour la suite de la COnvention INoubliable, qui continuera sans interruption jusqu'à dimanche midi ! ;) Le chemin est indiqué par des petits canards blancs tagués sur le sol depuis le métro Pont de Bois, situé sur la ligne 1. N'hésitez pas à explorer le bâtiment en quête de stands qui vous plairaient, et n'hésitez pas à poser de questions au staff !</details>
         <alarmDefault>yes</alarmDefault>
     </event>
-    <event>
-        <title>Projection de films</title>
-        <modalID>ProjFilms</modalID>
-        <WhenWhere>Vers 10h00 au Kino</WhenWhere>
-        <details>Le Kino diffuse des courts-métrages... Allez jeter un coup d'oeil !</details>
-        <alarmDefault>yes</alarmDefault>
-    </event>
-    
     <divider>14h00</divider>    
     <event>
-        <title>Tournoi de SSBB</title>
+        <title>Conférence Radio Sphère</title>
+        <modalID>ConfRadioSphere</modalID>
+        <WhenWhere>À l'amphithéatre</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Tournoi Carcassonne</title>
+        <modalID>TournoiCarcassonne</modalID>
+        <WhenWhere>Au stand jeux de plateau</WhenWhere>
+        <details>Il y a un tournoi de Carcassonne prévu ! Carcassonne est un jeu où les joueurs et joueuses posent chacun-e-s leur tour des tuiles représentant un décor vu du dessus. On gagne des points à la fin de la partie en fonction de la longueur des routes construites, de la taille des champs et des villes, du nombre de monastères avec sa couleur... C'est un jeu simple et amusant !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <divider>14h30</divider>    
+    <event>
+        <title>Contes pour adultes</title>
+        <modalID>ContesAdultes</modalID>
+        <WhenWhere>À l'amphithéatre</WhenWhere>
+        <details>Des contes sont prévus dans la salle détente !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <divider>16h00</divider>    
+    <event>
+        <title>Tournoi Super Smash Bros</title>
         <modalID>TournoiSSBB</modalID>
-        <WhenWhere>À 14h00 au stand Jeux Vidéos</WhenWhere>
-        <details>Il y a un tournoi de Super Smash Bros au stand Jeux Vidéos ! Montrez-leur de quel bois vous vous chauffez ! (Mais n'oubliez tout de même pas de vous y inscrire !)</details>
+        <WhenWhere>À 16h00 au stand Jeux Vidéos</WhenWhere>
+        <details>Il y a un tournoi de Super Smash Bros sur la Wii U au stand Jeux Vidéos ! Montrez-leur de quel bois vous vous chauffez ! (Mais n'oubliez tout de même pas de vous y inscrire !)</details>
         <WhenWhereSecondary>Super Smash Bros ?</WhenWhereSecondary>
         <detailsSecondary> Super Smash Bros, ou SSB, est un jeu de bagarre avec plusieurs personnages de plein de franchises Nintendo. Le but est d'éjecter ses adversaires de l'arène (qui a l'apparence d'un décor d'une franchise Nintendo) en jouant un personnage de son choix. Plus on prend de coups, plus on est facile à éjecter... Et pour renverser le cours de la bagarre, il y a des objets qui peuvent être très utiles ! (Note aux parents : Ce jeu est pour toute la famille :) )</detailsSecondary>        
         <alarmDefault>no</alarmDefault>
+    </event>
+
+    <divider>16h30</divider>    
+    <event>
+        <title>Conférence Opal'Roliste</title>
+        <modalID>ConfOpalRoliste</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Contes pour enfants</title>
+        <modalID>ContesEnfants</modalID>
+        <WhenWhere>Dans la salle détente</WhenWhere>
+        <details>Des contes sont prévus pour petits et grands enfants dans la salle détente :) Venez écouter de belles et chouettes histoires pleines d'aventures</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>17h30</divider>    
+    <event>
+        <title>Séance au Kino</title>
+        <modalID>Kino</modalID>
+        <WhenWhere>Au Kino, au bâtiment A</WhenWhere>
+        <details>Pour le COIN, le Kino de l'université Lille 3 diffuse les Goonies ! C'est un film très sympathique, pour toute la famille, et c'est totalement gratuit ! Rendez-vous à 17h30 à l'entrée du bâtiment A, qui se trouve tout au bout du chemin principal qui traverse tout le campus, à droit en haut des marches. Bon visionnage ! :)</details>
+        <WhenWhereSecondary>Les Goonies ?</WhenWhereSecondary>
+        <detailsSecondary>Les Goonies (The Goonies) est une comédie d'aventure américaine réalisée et produite par Richard Donner sur le scénario de Chris Columbus d'après une histoire de Steven Spielberg. Le film met en scène une bande d'adolescents des Goon Docks, surnom du quartier d'Astoria dans l'Oregon, interprétée par Sean Astin, Corey Feldman, Jonathan Ke Quan, Jeff Cohen, Josh Brolin, Kerri Green et Martha Plimpton. Distribué par Warner Bros. Pictures, ce film est sorti le 7 juin 1985 aux États-Unis et au Canada.
+        En France, il est sorti le 4 décembre 1985 sous la distribution de Splendor Films.
+        
+        Synopsis :
+        Astoria, été 1985. Alors que les terribles Fratelli s'évadent de prison, Bagou, Choco, Data et Mickey, une bande de gamins, trouvent dans le grenier de ce dernier une vieille carte au trésor menant au pirate Willy le Borgne. Alors que leur quartier va bientôt être rasé par le promoteur Elgin Perkins pour être remplacé par un terrain de golf, les garçons décident de se mettre à la recherche du butin pour éviter la destruction des maisons. Bientôt rattrapés par Brand, le frère de Mickey, et deux amies, Steph et Andy, les « Goonies », suivant leur carte, arrivent et pénètrent dans un vieux restaurant en bordure de mer ; sans savoir que l'endroit est déjà occupé par les Fratelli en cavale, s'en suivra de la poursuite de leur aventure souterraine jusqu'au bateau pirate de Willy le Borgne et de son fameux trésor… (Merci, Wikipedia)</detailsSecondary>        
+        <alarmDefault>no</alarmDefault>
+    </event>
+
+    <divider>18h00</divider>    
+    <event>
+        <title>Blindtest</title>
+        <modalID>Blindtest</modalID>
+        <WhenWhere>Dans l'amphithéatre</WhenWhere>
+        <details>Des </details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Tournoi StreetFighter</title>
+        <modalID>TournoiStreetFighter</modalID>
+        <WhenWhere>Au stand jeux vidéos</WhenWhere>
+        <details>Un tournoi de Street Fighter est prévu au stand jeux vidéos. N'hésitez pas à vous y inscrire !</details>
+        <alarmDefault>no</alarmDefault>
     </event>    
+
+    <divider>19h30</divider>    
+    <event>
+        <title>Inscriptions aux JDR</title>
+        <modalID>InscriptionsJDRVendredi</modalID>
+        <WhenWhere>À 19h30 à l'accueil</WhenWhere>
+        <details>Les inscriptions pour les tables de jeux de rôle sont ouvertes ! Si vous voulez jouer, filez à l'accueil pour voir s'il y en a un qui vous plait et inscrivez-vous sur la feuille correspondante. Dêpechez-vous, les places sont limitées !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    <divider>20h00</divider>
+    <event>
+        <title>Début des JDR</title>
+        <modalID>DebutJDRVendredi</modalID>
+        <WhenWhere>20h00, lieu indiqué sur la feuille d'inscription</WhenWhere>
+        <details>Les jeux de rôle ont commencés... S'il n'y a personne dans la salle indiquée par la feuille d'inscription, courez retrouver le Maître du Jeu, qu'il/elle finisse son café et réunisse ses joueurs et joueuses. Passez une bonne soirée et amusez-vous bien !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Blindtest et animations nocturnes</title>
+        <modalID>BlindtestNocturne</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+</day>
+
+
+
+
+<!-- saturday -->
+<day name="Samedi" id="Samedi">
+    <divider>13h00</divider>
+    <event>
+        <title>Tournoi de SmashBros</title>
+        <modalID>TournoiSmashBrosGC</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>Un tournoi de Smash Bros sur GameCube est prévu au stand jeux vidéos. Inscrivez-vous et mettez la pâtée à vos adversaires !</details>
+        <WhenWhereSecondary>Super Smash Bros ?</WhenWhereSecondary>
+        <detailsSecondary> Super Smash Bros, ou SSB, est un jeu de bagarre avec plusieurs personnages de plein de franchises Nintendo. Le but est d'éjecter ses adversaires de l'arène (qui a l'apparence d'un décor d'une franchise Nintendo) en jouant un personnage de son choix. Plus on prend de coups, plus on est facile à éjecter... Et pour renverser le cours de la bagarre, il y a des objets qui peuvent être très utiles ! (Note aux parents : Ce jeu est pour toute la famille :) ) </detailsSecondary>
+        <alarmDefault>no</alarmDefault>
+    </event>    
+    
+    
+    <divider>12h00</divider>
+    <event>
+        <title>Tournoi de StreetFighter</title>
+        <modalID>TournoiStreetFighterSuperNes</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>        
+    
+    
+    <divider>12h30</divider>
+    <event>
+        <title>Conférence Opal'Roliste</title>
+        <modalID>ConfOpalRoliste</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>        
+    
+    <divider>13h00</divider>
+    <event>
+        <title>Conférence audio</title>
+        <modalID>ConfAudio</modalID>
+        <WhenWhere>Dans l'amphithéatre</WhenWhere>
+        <details>« Transmettre une histoire par l'audio »
+            Cette conférence réunira des auteurs de sagas audios et de romans de science-fiction qui présenteront des expériences de passage du livre à l'audio ou de l'audio au livre. Un bon moyen pour appréhender les spécificités de l'audio comme moyen de diffusion d'une histoire.
+            Invités : Silverson et Andropovitch (Red Universe), Adastria (PrototypeS)
+            Animation : Tristan</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+
+    <divider>14h00</divider>
+    <event>
+        <title>Jeu de rôle pour enfants</title>
+        <modalID>JDREnfants</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Tournoi de SmashBros spécial Pirates</title>
+        <modalID>TournoiSBPirates</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <WhenWhereSecondary>Super Smash Bros ?</WhenWhereSecondary>
+        <detailsSecondary> Super Smash Bros, ou SSB, est un jeu de bagarre avec plusieurs personnages de plein de franchises Nintendo. Le but est d'éjecter ses adversaires de l'arène (qui a l'apparence d'un décor d'une franchise Nintendo) en jouant un personnage de son choix. Plus on prend de coups, plus on est facile à éjecter... Et pour renverser le cours de la bagarre, il y a des objets qui peuvent être très utiles ! (Note aux parents : Ce jeu est pour toute la famille :) )</detailsSecondary>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Tournoi Race for the Galaxy</title>
+        <modalID>TournoiRFTG</modalID>
+        <WhenWhere>Stand jeux de plateau</WhenWhere>
+        <details>Un tournoi de Race for the Galaxy est prévu au stand jeux de plateau... N'hésitez pas à participer ! Race for the galaxy est un jeu de carte évolutif, où l'objectif est de construire l'empire galactique le plus vaste et puissant possible. Chaque partie dure environ d'une quarantaine de minutes à une heure !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
 
 
     <divider>14h30</divider>    
@@ -106,51 +267,24 @@
             - Merci d'envoyer par mail à lune.jules@gmail.com vos MP3 3 jours maximum avant la convention, sinon votre inscription ne sera pas prise en compte 
             Voilà ! Enjoyez !
             
-            </details>
+        </details>
         <WhenWhereSecondary>Cosplay ?</WhenWhereSecondary>
         <detailsSecondary>est un loisir qui consiste à jouer le rôle de ses personnages en imitant leur costume, leurs cheveux — à l'aide d'une perruque ou en réalisant la même coupe de cheveux que celle du personnage — et leur maquillage. Les thèmes les plus courants sont les personnages de mangas, de bande dessinée, d'animation japonaise, de dessins animés, de tokusatsu, de films, de jeux vidéo et de comics mais viennent à inclure également les séries télévisées et toute sorte de costumes à thème. On appelle les pratiquants des cosplayers. (Merci wikipedia ;) )</detailsSecondary>        
         <alarmDefault>no</alarmDefault>
-    </event> 
+    </event>   
 
 
-
-
-    
-    <divider>19h40</divider>    
+    <divider>15h00</divider>
     <event>
-        <title>Inscriptions aux JDR</title>
-        <modalID>InscriptionsJDRVendredi</modalID>
-        <WhenWhere>À 19h40 à l'accueil</WhenWhere>
-        <details>Les inscriptions pour les tables de jeux de rôle sont ouvertes ! Si vous voulez jouer, filez à l'accueil pour voir s'il y en a un qui vous plait et inscrivez-vous sur la feuille correspondante. Dêpechez-vous, les places sont limitées !</details>
-        <alarmDefault>no</alarmDefault>
-    </event>
-    
-    <divider>20h00</divider>
-    <event>
-        <title>Début des JDR</title>
-        <modalID>DebutJDRVendredi</modalID>
-        <WhenWhere>20h00, lieu indiqué sur la feuille d'inscription</WhenWhere>
-        <details>Les jeux de rôle ont commencés... S'il n'y a personne dans la salle indiquée par la feuille d'inscription, courez retrouver le Maître du Jeu, qu'il/elle finisse son café et réunisse ses joueurs et joueuses. Passez une bonne soirée et amusez-vous bien !</details>
-        <alarmDefault>no</alarmDefault>
-    </event>
-</day>
-
-
-
-
-<!-- saturday -->
-<day name="Samedi" id="Samedi">
-    <divider>13h00</divider>
-    <event>
-        <title>Jdrs de l'après-midi</title>
-        <modalID>JDRaprem</modalID>
-        <WhenWhere>À 13h00 à l'accueil</WhenWhere>
-        <details>Il y a des jeux de rôle tout l'après-midi. Si ça vous tente, jetez un coup d'oeil aux jeux proposés</details>
+        <title>Contes pour enfants</title>
+        <modalID>ContesEnfants</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
         <alarmDefault>no</alarmDefault>
     </event>
     <event>
-        <title>Trollball</title>
-        <modalID>Trollball</modalID>
+        <title>Tournoi de Trollball</title>
+        <modalID>TournoiTrollball</modalID>
         <WhenWhere>À 13h00 salle G</WhenWhere>
         <details>Vous avez envie de vous défouler ? Venez participer à une partie de trollball en salle G ! Il s'agit d'un jeu qui oppose deux camps où chaque personne est équipée d'une épée en mousse. Le but est de s'emparer d'une tête de troll et de la placer dans le camp adverse ! Mais attention ! Une touche d'une épée amie ou ennemie, et on est éliminé et on doit mettre un genou au sol !</details>
         <WhenWhereSecondary>Consignes de sécurité</WhenWhereSecondary>
@@ -159,20 +293,49 @@
     </event>
     
     
-    <divider>17h00</divider>
+    <divider>16h00</divider>
     <event>
-        <title>Loterie, discours, pot</title>
-        <modalID>Discours</modalID>
-        <WhenWhere>À 17h00 dans l'amphi J</WhenWhere>
-        <details>Rendez-vous dans l'amphi J pour participer à une loterie, écouter ce que les organisateurs et organisatrices ont à raconter de beau et pour un pot de remerciement... Parce que le COIN n'aurait jamais existé sans ses fier-e-s bénévoles et sans l'aide de nombreux contributeurs extérieurs</details>
+        <title>Tournoi de SoulCalibur</title>
+        <modalID>TournoiSoulCalibur</modalID>
+        <WhenWhere>Au stand jeux vidéos</WhenWhere>
+        <details>Un tournoi de SoulCalibur sur Xbox est prévu au stand jeux vidéos. Pensez à vous inscrire un peu en avance pour être sûr-e d'y participer et d'avoir une chance de botter le derrière de vos adversaires !</details>
+        <WhenWhereSecondary>SoulCalibur ?</WhenWhereSecondary>
+        <detailsSecondary>SoulCalibur est un jeu d'arcade sur Xbox. Chaque joueurs/joueuse incarne un personnage avec un nombre défini de points de vie. L'objectif est de vaincre son adversaire en enchaînant des coups tout en évitant de s'en prendre. Chaque personnage a son propre style de jeu, ce qui rend chaque partie unique</detailsSecondary>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    
+    
+    <divider>16h30</divider>
+    <event>
+        <title>Conférence Opal'Roliste</title>
+        <modalID>ConfOpalRoliste</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Contes pour adultes</title>
+        <modalID>ContesAdultes</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
+        <alarmDefault>no</alarmDefault>
+    </event>        
+    
+     
+    <divider>18h00</divider>
+    <event>
+        <title>TOMBOLA</title>
+        <modalID>TOMBOLA</modalID>
+        <WhenWhere>Dans l'amphi J</WhenWhere>
+        <details>Rendez-vous dans l'amphi J pour participer à une tombola, écouter ce que les organisateurs et organisatrices ont à raconter de beau et pour un pot de remerciement... Parce que le COIN n'aurait jamais existé sans ses fier-e-s bénévoles et sans l'aide de nombreux contributeurs extérieurs</details>
         <alarmDefault>no</alarmDefault>
     </event>
 
-    <divider>19h40</divider>    
+    <divider>19h30</divider>    
     <event>
         <title>Inscriptions JDR</title>
         <modalID>InscriptionsJDRSamedi</modalID>
-        <WhenWhere>À 19h40 à l'accueil</WhenWhere>
+        <WhenWhere>À l'accueil</WhenWhere>
         <details>Les inscriptions pour les tables de jeux de rôle sont ouvertes ! Si vous voulez jouer, filez à l'accueil pour voir s'il y en a un qui vous plait et inscrivez-vous sur la feuille correspondante. Dêpechez-vous, les places sont limitées !</details>
         <alarmDefault>no</alarmDefault>
     </event>
@@ -183,6 +346,13 @@
         <modalID>DebutJDRSamedi</modalID>
         <WhenWhere>20h00, lieu indiqué sur la feuille d'inscription</WhenWhere>
         <details>Les jeux de rôle ont commencés... S'il n'y a personne dans la salle indiquée par la feuille d'inscription, courez retrouver le Maître du Jeu, qu'il/elle finisse son café et réunisse ses joueurs et joueuses. Passez une bonne soirée et amusez-vous bien !</details>
+        <alarmDefault>no</alarmDefault>
+    </event>
+    <event>
+        <title>Blindtest et animations nocturnes</title>
+        <modalID>BlindtestNocturne</modalID>
+        <WhenWhere>TODO</WhenWhere>
+        <details>TODO</details>
         <alarmDefault>no</alarmDefault>
     </event>
 </day>
